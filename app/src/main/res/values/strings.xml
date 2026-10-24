@@ -1,38 +1,7 @@
 <resources>
-    <string name="app_name">Ingles</string>
-
-    <!-- Bienvenida -->
-    <string name="bienvenida_titulo">¡Bienvenido!</string>
-    <string name="bienvenida_subtitulo">Practica tu inglés a tu ritmo con exámenes y materiales de cada nivel.</string>
-    <string name="btn_reg">Registro</string>
-    <string name="btn_ises">Inicio de sesión</string>
-    <string name="bienvenida_pie">Let\'s learn English together</string>
-
-    <!-- Registro -->
-    <string name="f_reg">F. Reg</string>
-    <string name="registro_subtitulo">Formulario de registro</string>
-    <string name="hint_nombre">Nombre completo</string>
-    <string name="hint_correo">Correo</string>
-    <string name="hint_matricula">Matrícula</string>
-    <string name="lbl_carrera">Carrera</string>
-    <string name="hint_contrasena">Contraseña</string>
-    <string name="btn_enviar">Enviar</string>
-    <string name="seleccione_carrera">Selecciona tu carrera</string>
-    <string-array name="carreras">
-        <item>Selecciona tu carrera</item>
-        <item>ISTI / STEII</item>
-        <item>IAA</item>
-        <item>IPGI</item>
-    </string-array>
-
-    <!-- Inicio de sesión -->
-    <string name="inicio_sesion">Inicio de sesión</string>
-    <string name="inicio_sesion_sub">Ingresa con tu matrícula</string>
-    <string name="olvidaste">¿Olvidaste tu contraseña?</string>
-    <string name="no_tienes_cuenta">¿No tienes cuenta? Regístrate</string>
-
-    <!-- Mensajes -->
-    <string name="campo_obligatorio">Campo obligatorio</string>
-    <string name="correo_invalido">Correo no válido</string>
-    <string name="matricula_invalida">La matrícula solo lleva números</string>
+    <string name="app_name">musica</string>
+    <string name="hint_name">Nombre</string>
+    <string name="artist">Artista</string>
+    <string name="album">Álbum</string>
+    <string name="new_menu">Agregar canción</string>
 </resources>

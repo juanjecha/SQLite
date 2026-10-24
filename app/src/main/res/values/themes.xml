@@ -1,42 +1,9 @@
-<resources>
-    <!-- Tema base de la aplicación (claro para respetar la paleta suave) -->
-    <style name="Base.Theme.Ingles" parent="Theme.Material3.Light.NoActionBar">
-        <item name="colorPrimary">@color/morado_medio</item>
-        <item name="colorOnPrimary">@color/blanco</item>
-        <item name="colorPrimaryContainer">@color/morado_suave</item>
-        <item name="colorSecondary">@color/azul_medio</item>
-        <item name="colorSecondaryContainer">@color/azul_claro</item>
-        <item name="colorTertiary">@color/amarillo_medio</item>
-        <item name="colorSurface">@color/blanco</item>
-        <item name="colorOnSurface">@color/morado_texto</item>
-        <item name="android:colorBackground">@color/morado_suave</item>
-        <item name="android:windowLightStatusBar">true</item>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Musica" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Ingles" parent="Base.Theme.Ingles" />
-
-    <!-- Estilos reutilizables -->
-    <style name="Ingles.Campo" parent="Widget.Material3.TextInputLayout.OutlinedBox">
-        <item name="boxCornerRadiusTopStart">14dp</item>
-        <item name="boxCornerRadiusTopEnd">14dp</item>
-        <item name="boxCornerRadiusBottomStart">14dp</item>
-        <item name="boxCornerRadiusBottomEnd">14dp</item>
-        <item name="boxStrokeColor">@color/morado_medio</item>
-        <item name="boxBackgroundColor">@color/blanco</item>
-        <item name="hintTextColor">@color/morado_medio</item>
-        <item name="android:layout_marginBottom">12dp</item>
-    </style>
-
-    <style name="Ingles.Boton" parent="Widget.Material3.Button">
-        <item name="android:minHeight">56dp</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="cornerRadius">16dp</item>
-    </style>
-
-    <style name="Ingles.Titulo" parent="">
-        <item name="android:textColor">@color/morado_texto</item>
-        <item name="android:textSize">28sp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
+    <style name="Theme.Musica" parent="Base.Theme.Musica" />
 </resources>

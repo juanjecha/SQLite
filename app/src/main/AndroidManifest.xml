@@ -2,10 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Necesario más adelante para conectarse a la API de CodeIgniter -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- Permite conectarse por http:// (sin "s") al servidor local de CodeIgniter -->
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,33 +10,56 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Ingles"
-        android:usesCleartextTraffic="true"
-        tools:targetApi="31">
-
-        <!-- 1. Pantalla de inicio de la app -->
+        android:theme="@style/Theme.Musica">
         <activity
-            android:name=".BienvenidaActivity"
-            android:exported="true">
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- 2. Registro -->
         <activity
-            android:name=".RegistroActivity"
+            android:name=".AddActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false"
-            android:parentActivityName=".BienvenidaActivity"
+            android:windowSoftInputMode="adjustResize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".entitites.Songs"
+            android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
-        <!-- 3. Inicio de sesión -->
         <activity
-            android:name=".InicioSesionActivity"
+            android:name=".SeeActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false"
-            android:parentActivityName=".BienvenidaActivity"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity><activity
+            android:name=".EditActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
 
     </application>
 

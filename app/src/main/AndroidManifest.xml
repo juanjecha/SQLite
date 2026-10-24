@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Necesario más adelante para conectarse a la API de CodeIgniter -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Permite conectarse por http:// (sin "s") al servidor local de CodeIgniter -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ingles"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- 1. Pantalla de inicio de la app -->
+        <activity
+            android:name=".BienvenidaActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 2. Registro -->
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false"
+            android:parentActivityName=".BienvenidaActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 3. Inicio de sesión -->
+        <activity
+            android:name=".InicioSesionActivity"
+            android:exported="false"
+            android:parentActivityName=".BienvenidaActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+
+</manifest>
